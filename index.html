@@ -312,7 +312,7 @@ $("#form").addEventListener("submit", e => {
 /* نسخ رقم الدعم */
 $("#copyTel").onclick = async e => {
   const b = e.currentTarget, el = $("#tel");
-  try { await navigator.clipboard.writeText("01159363019"); b.textContent = "تم النسخ"; }
+  try { await navigator.clipboard.writeText("01004895363"); b.textContent = "تم النسخ"; }
   catch (_) { const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = "حدد الرقم وانسخه"; }
   setTimeout(() => b.textContent = "انسخ الرقم", 1800);
 };
